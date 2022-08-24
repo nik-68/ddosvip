@@ -9,7 +9,6 @@ import socket
 import random
 import string
 import optparse
-import clear
 import socket, requests
 import random
 import threading
