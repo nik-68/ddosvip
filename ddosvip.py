@@ -9,7 +9,7 @@ import socket
 import random
 import string
 import optparse
-from turtle import clear
+import clear
 import socket, requests
 import random
 import threading
