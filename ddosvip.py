@@ -8,6 +8,7 @@ import time
 import socket
 import random
 import string
+import turtle
 import optparse
 from turtle import clear
 #----------------------------------------------------------------------#
