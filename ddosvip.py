@@ -33,14 +33,12 @@ print('''
   88    .8P 88    .8P Y8.   .8P d8'   .8P      88    d8  88  88        
   8888888P  8888888P   `8888P'   Y88888P         8888'   dP  dP        
 ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ''')
-
-    print()
-    print("DDOS WIFI TOOLS BY YONATHAN GM")
-    print("===================================")
-    print("TYPE [gas] TO START THE PROGRAM ")
-    print()
-    put=input("INPUT : ")
-    
+print()
+print("DDOS WIFI TOOLS BY YONATHAN GM")
+print("===================================")
+print("TYPE [gas] TO START THE PROGRAM ")
+print()
+put=input("INPUT : ")
     if put == "gas":
         os.system('cls')
         ddos()
@@ -53,9 +51,6 @@ ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ''')
         print("MASUKAN PAKET YANG ANDA KIRIM KE WIFI TUJUAN (MAXIMAL 1000)")
         print()
         z = input("PACKET: ")
-
-import os
-import sys
 
 #-------------------------------------------------------------#
 def usage():
