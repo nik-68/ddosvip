@@ -30,7 +30,7 @@ print("""\033[93m
   ██║░░██║██║░░██║██║░░██║░╚═══██╗
   ██████╔╝██████╔╝╚█████╔╝██████╔╝
   ╚═════╝░╚═════╝░░╚════╝░╚═════╝ 
-     IP DARI YANG ANDA INGIN SERANG
+   IP DARI YANG ANDA INGIN SERANG
 """)
 print ()
 time.sleep(3)
