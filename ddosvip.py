@@ -26,13 +26,12 @@ def ddos():
 def put():
     print("--------------------------------------------------------------------------")
         print('''
-             - PassDDoS#6595 Selling Bypass JS/UAM/Captcha/etc -
-888888ba  888888ba   .88888.  .d88888b       dP     dP dP  888888ba  
-88    `8b 88    `8b d8'   `8b 88.    "'      88     88 88  88    `8b 
-88     88 88     88 88     88 `Y88888b.      88    .8P 88 a88aaaa8P' 
-88     88 88     88 88     88       `8b 8888 88     d8 88  88        
-88    .8P 88    .8P Y8.   .8P d8'   .8P      88    d8  88  88        
-8888888P  8888888P   `8888P'   Y88888P         8888'   dP  dP        
+  888888ba  888888ba   .88888.  .d88888b       dP     dP dP  888888ba  
+  88    `8b 88    `8b d8'   `8b 88.    "'      88     88 88  88    `8b 
+  88     88 88     88 88     88 `Y88888b.      88    .8P 88 a88aaaa8P' 
+  88     88 88     88 88     88       `8b 8888 88     d8 88  88        
+  88    .8P 88    .8P Y8.   .8P d8'   .8P      88    d8  88  88        
+  8888888P  8888888P   `8888P'   Y88888P         8888'   dP  dP        
 ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ''')
 
     print("")
