@@ -67,7 +67,7 @@ acceptall=["Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=
 url = input(" \033[94m[+] Url target \033[1;31;40m  ==> : \033[0m")
 url_chek = requests.get(url)
 ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
-print(\nip)
+print(\n"ip)
 ip = str(input(" \033[94m[+] IP target \033[1;31;40m  ==> : \033[0m"))
 port = int(input(" \033[94m[+] Port Target \033[1;31;40m ==> : \033[0m"))
 pack = int(input(" \033[94m[+] INPUT PACKET/s \033[1;31;40m  ==> : \033[0m"))
