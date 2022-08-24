@@ -76,7 +76,6 @@ threads = int(input(" \033[94m[+] INPUT THREADS \033[1;31;40m  ==> : \033[0m"))
 fake_ip = '182.21.20.32'
 print("""\033[93m""")
 time.sleep(2)
-os.system("clear")
 def start():
     global useragents, ref, acceptall
     hh = random._urandom(3016)
