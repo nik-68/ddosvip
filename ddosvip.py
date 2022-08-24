@@ -74,7 +74,7 @@ port = int(input(" \033[94m[+] Port Target \033[1;31;40m ==> : \033[0m"))
 pack = int(input(" \033[94m[+] INPUT PACKET/s \033[1;31;40m  ==> : \033[0m"))
 threads = int(input(" \033[94m[+] INPUT THREADS \033[1;31;40m  ==> : \033[0m"))
 fake_ip = '182.21.20.32'
-
+print("""\033[93m""")
 time.sleep(3)
 os.system("clear")
 def start():
