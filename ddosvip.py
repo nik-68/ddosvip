@@ -9,9 +9,10 @@ import socket
 import random
 import string
 import optparse
-import socket, requests
+import socket
 import random
 import threading
+import requests
 #Colour
 yellow='\033[93m'
 gren='\033[92m'
@@ -30,7 +31,7 @@ print("""\033[93m
   ██║░░██║██║░░██║██║░░██║░╚═══██╗
   ██████╔╝██████╔╝╚█████╔╝██████╔╝
   ╚═════╝░╚═════╝░░╚════╝░╚═════╝ 
-   IP DARI YANG ANDA INGIN SERANG
+  URL SKAN IP DARI YANG ANDA INGIN
 """)
 print ()
 time.sleep(3)
@@ -61,6 +62,13 @@ acceptall=["Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=
 "Accept: text/html, application/xhtml+xml, image/jxr, */*\r\nAccept-Encoding: gzip\r\nAccept-Charset: utf-8, iso-8859-1;q=0.5\r\nAccept-Language: utf-8, iso-8859-1;q=0.5, *;q=0.1\r\n"
 "Accept-Charset: utf-8, iso-8859-1;q=0.5\r\nAccept-Language: utf-8, iso-8859-1;q=0.5, *;q=0.1\r\n",
 "Accept-Language: en-US,en;q=0.5\r\n"]
+
+#ip
+url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m ")
+url_chek = requests.get(url)
+ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
+print(ip)
+print()
 
 ip = str(input('[+] Target: => '))
 port = int(input('[+] Port: => '))
