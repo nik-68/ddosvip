@@ -8,7 +8,6 @@ import time
 import socket
 import random
 import string
-import turtle
 import optparse
 from turtle import clear
 import socket, requests
@@ -24,7 +23,7 @@ def ddos():
     print ("    ██████╔╝██████╔╝╚█████╔╝██████╔╝")
     print ("    ╚═════╝░╚═════╝░░╚════╝░╚═════╝░")
     print ()
-    print ("MASUKAN IP DARI WIFI YANG ANDA INGIN SERANG")
+    print ("MASUKAN IP DARI YANG ANDA INGIN SERANG")
     print ()
 #----------------------------------------------------------------------#
 
