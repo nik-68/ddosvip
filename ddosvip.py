@@ -39,7 +39,8 @@ print("===================================")
 print("TYPE [gas] TO START THE PROGRAM ")
 print()
 put=input("INPUT : ")
-    if put == "gas":
+
+if put == "gas":
         os.system('cls')
         ddos()
         x = input("IP : ")
